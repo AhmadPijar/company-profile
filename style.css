@@ -121,19 +121,39 @@
 
 .about {
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #e8f9ff;
   color: #000957;
+  padding: 50px 20px;
 }
 .about .container {
-  padding-top: 68px;
+  padding-top: 40px;
   text-align: center;
 }
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .about .row .profile-image {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
+}
+@media (max-width: 576px) {
+  .about {
+    padding: 30px 10px;
+  }
+
+  .about .container {
+    padding-top: 20px;
+  }
+
+  .about .row .profile-image {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .featurette-divider {
